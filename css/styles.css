@@ -1,0 +1,167 @@
+/* Add Lab5CSS code --------------------------------------------------------------------------------------------*/
+
+body {
+  
+	background-image: url("../images/planetback3.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 15% 0%;
+  
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Setup Dimensions of main Page centered on screen */
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1); 
+	border-radius: 12px 12px 0px 0px; 
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Header section of main page add custom gradient from ColorZilla */
+
+#header {
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4ddb4+0,83c783+17,52b152+33,008a00+67,005700+83,002400+100;Green+3D+%231 */
+  background: #b4ddb4; /* Old browsers */
+  background: -moz-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
+  font-family: 'Alfa Slab One', cursive;
+  font-size:40px;  
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+  height:60px;
+  border-radius: 12px 12px 0px 0px; 
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Main body Planet data styles */
+
+#main-info{
+
+	background-color: #000;
+  color: #70db70;
+  padding-bottom: 40px;
+}  
+
+#main-info .gallery .mer{
+  margin-left: 375px;
+}  
+
+#main-info .gallery .jup{
+  margin-left: 35px;
+} 
+
+#main-info .gallery .sat{
+  margin-left: 35px;
+} 
+
+#main-info .gallery .nep{
+  margin-left: 35px;
+} 
+
+/* Table Styling */
+
+#main-info .pl{
+ 
+  border-collapse:collapse;
+  border-spacing:0;
+  border-color:#bbb;
+  margin-left: 200px;
+
+}
+
+#main-info .pl td{
+
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+  border-color:#bbb;
+  color:#594F4F;
+  background-color:#E0FFEB;
+}
+
+#main-info .pl th {  
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+  border-color:#bbb;
+  color:#493F3F;
+  background-color:#9DE0AD;
+}
+
+#main-info .pl .pl-colrow{
+
+  vertical-align:top
+}
+
+#main-info .pl .pl-head{
+
+color:#000000;vertical-align:top
+
+}
+
+#merc1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#sat1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#jup1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#nep1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Footer styling */
+
+#footer {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4ddb4+0,83c783+17,52b152+33,008a00+67,005700+83,002400+100;Green+3D+%231 */
+  background: #b4ddb4; /* Old browsers */
+  background: -moz-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
+  font-family: 'Alfa Slab One', cursive;
+  font-size:15px;
+  margin: 0 auto;
+	background-color: #777;
+	height: 35px;
+  text-align: center;
+  border-radius: 0px 0px 12px 12px; 
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1);
+	clear: both;
+}
+
+#css-check{
+  margin-top: 20px;
+  margin-left: 500px;
+}
