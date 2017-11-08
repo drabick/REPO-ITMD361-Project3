@@ -3,8 +3,10 @@
 
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<title>ITMD-361 Darren Rabick Project 1 Hobbies Page</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
@@ -56,7 +58,9 @@
           <p>Below is a sewries from ABC from 1982 on Arcade Games</p>  
     </section>
   </section>
-  
+<!--  Add Section for Google Maps to reside -->  
+    <div id="map">
+    </div>
   <footer ID="contact">
     <h2>Contact Info</h2>
     <address>
@@ -70,6 +74,17 @@
     </a>
     </p>
   </footer>
+<!-- Initial Google Maps API Script -->  
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMXv3trUveksDg7z9babexb0CNqSFpXcM&callback=initMap"async defer></script>
 </body>
 
 </html>
