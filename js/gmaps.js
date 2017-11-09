@@ -1,25 +1,4 @@
-//-- Initial Google Maps API Script
-        <script>
-      function initMap() {
-        var uluru = {lat: 41.6783569, lng: -88.5733573};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
-          center: uluru
-        });
-        var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    
 //-- Goofle Places API Test -->
-    <script>
-      // This example requires the Places library. Include the libraries=places
-      // parameter when you first load the API. For example:
-      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-
       var map;
       var infowindow;
 
@@ -60,4 +39,3 @@
           infowindow.open(map, this);
         });
       }
-    </script>

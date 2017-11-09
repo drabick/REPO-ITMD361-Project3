@@ -405,13 +405,13 @@ section.desc {
     }
 }
 
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 0;
-      }
+#map {
+  height: 100%;
+     }
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0;
+  }
