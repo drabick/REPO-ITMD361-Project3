@@ -12,6 +12,7 @@ function initMap() {
   var infowindow = new google.maps.InfoWindow({
     content: aboutstring
     });   
+    
   var map = new google.maps.Map(document.getElementById('map'), {
   zoom: 15,
   center: myLatLng
