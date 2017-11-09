@@ -369,6 +369,16 @@ section.desc {
       margin-bottom: 10px; 
 }
 
+
+#arcades h1
+{
+      text-align: center;
+      font: bold 25px/30px arial, serif;
+      margin-top: 50px;
+      margin-bottom: 10px; 
+}
+
+
 /*----------------------------------------------------------------------------------------------------------------------*/
 
 .column {
