@@ -1,41 +1,28 @@
-//-- Goofle Places API Test -->
-      var map;
-      var infowindow;
+//-- Goofle Mao Place MaRKER API Jscript -->
+      
+function initMap() {
+  var myLatLng = {lat: 41.526899, lng: -88.078976};
 
-      function initMap() {
-        var pyrmont = {lat: 41.8788804, lng: -87.6381036};
+  var map = new google.maps.Map(document.getElementById('map'), {
+  zoom: 15,
+  center: myLatLng
+  });
 
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: pyrmont,
-          zoom: 15
-        });
+  var marker = new google.maps.Marker({
+  position: myLatLng,
+  map: map,
+  icon: 'pin.png'
+  });
+        
+var contentString = '<h1>Chicago Street Pinball Arcade</h1><p>There are few things more truly American than pinball. Did you know that over 90% of the worlds pinball machines have been designed and manufactured in the Chicago area?  Its true.  And is still true to this day.Pinball is something that can only approximated, and never duplicated.  No two games are ever the same, and there arent patterns to memorize to guarantee you the high score.Pinball is a completely visceral experience, immersing and saturating the senses, which is something smart phones and consoles just cant do.Come visit us in historic Downtown Joliet, a block off of old Route 66, for your chance to partake in pinball for the first time, or the thousandth time.  Either way, youll be drawn back to the lure of the mystical silver ball.</p>';
 
-        infowindow = new google.maps.InfoWindow();
-        var service = new google.maps.places.PlacesService(map);
-        service.nearbySearch({
-          location: pyrmont,
-          radius: 600,
-          type: ['gas']
-        }, callback);
-      }
-
-      function callback(results, status) {
-        if (status === google.maps.places.PlacesServiceStatus.OK) {
-          for (var i = 0; i < results.length; i++) {
-            createMarker(results[i]);
-          }
-        }
-      }
-
-      function createMarker(place) {
-        var placeLoc = place.geometry.location;
-        var marker = new google.maps.Marker({
-          map: map,
-          position: place.geometry.location
-        });
-
-        google.maps.event.addListener(marker, 'click', function() {
-          infowindow.setContent(place.name);
-          infowindow.open(map, this);
-        });
-      }
+var infowindow = new google.maps.InfoWindow({
+  content: contentString
+ 	});        
+                
+google.maps.event.addListener(marker, 'click', function() {
+infowindow.open(map, marker);  	
+    });
+        
+        
+      }      
