@@ -16,7 +16,7 @@
   display:inline;
 }
 #mmenu a {
-  text-decoration:none; 
+  text-decoration:none;
   padding: 0px 30px; /* variable width */
   font: bold 20px/30px arial, serif;
   color: #000;
@@ -30,7 +30,7 @@
 #busphoto
 {
     float: left;
-} 
+}
 
 /*----------------------------------------------------------------------------------------------------------------------*/
 
@@ -154,11 +154,11 @@ section.desc {
 .exp h4
 {
       font: bold 13px/30px arial, serif;
-}  
+}
 .exp h5
 {
       font: bold 13px/30px arial, serif;
-}   
+}
 
 /* Table - CSS --------------------------------------------------------------------------------------------*/
 
@@ -172,13 +172,13 @@ section.desc {
 #high h2{
       text-align: center;
       font: bold 25px/30px arial, serif;
-}  
+}
 
 #hight {
 
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 
 }
 
@@ -203,12 +203,12 @@ section.desc {
 #skill h2{
       text-align: center;
       font: bold 25px/30px arial, serif;
-}  
+}
 
 #skillt {
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 
 }
 
@@ -233,22 +233,22 @@ section.desc {
       font: bold 25px/30px arial, serif;
       margin-left: 10px;
       margin-right: 10px;
-      margin-bottom: 10px; 
+      margin-bottom: 10px;
 }
 
 #sum p
 {
       text-align: center;
       font:  15px/30px arial, serif;
-      margin-bottom: 10px; 
+      margin-bottom: 10px;
 }
 
 #pro
 {
       text-align: center;
       font:  bold 25px/30px arial, serif;
-      margin-bottom: 10px; 
-} 
+      margin-bottom: 10px;
+}
 
 
 #edu1{
@@ -261,8 +261,8 @@ section.desc {
       text-align: center;
       font:  bold 25px/30px arial, serif;
 
-      margin-bottom: 10px; 
-} 
+      margin-bottom: 10px;
+}
 
 /*----------------------------------------------------------------------------------------------------------------------*/
 
@@ -271,12 +271,12 @@ section.desc {
 #edu h2{
       text-align: center;
       font: bold 25px/30px arial, serif;
-}  
+}
 
 #edu2 {
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 
 }
 
@@ -298,15 +298,15 @@ section.desc {
 {
       text-align: center;
       font: bold 25px/30px arial, serif;
-      margin-bottom: 10px; 
+      margin-bottom: 10px;
 }
 
 #mil p
 {
       text-align: center;
       font:  15px/30px arial, serif;
-      margin-bottom: 10px; 
-}    
+      margin-bottom: 10px;
+}
 
 /*----------------------------------------------------------------------------------------------------------------------*/
 
@@ -315,7 +315,7 @@ section.desc {
       text-align: center;
       font: bold 25px/30px arial, serif;
       margin-top: 50px;
-      margin-bottom: 10px; 
+      margin-bottom: 10px;
 }
 
 
@@ -359,11 +359,15 @@ section.desc {
 
 /*----------------------------------------------------------------------------------------------------------------------*/
 
-#map {
-  height: 500px;
-  width: 500px;
-  margin-left: 715px;
-     }
-
-     
-
+#map_container{
+  position: relative;
+}
+#map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 22.25%;
+    padding-top: 30px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
